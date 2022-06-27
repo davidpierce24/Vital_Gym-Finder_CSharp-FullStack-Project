@@ -26,6 +26,15 @@ public class HomeController : Controller
         return View();
     }
 
+// Route to display the page for an owner to login or register------------
+    [HttpGet("")]
+
+
+// Route to display the page for a user to login or register-------------
+
+
+// Route to display the main home page----------------------------------------
+
 
 // Route to register a user ------------------------------------------
     [HttpPost("user/register")]

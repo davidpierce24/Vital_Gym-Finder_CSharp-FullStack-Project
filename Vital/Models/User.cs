@@ -16,7 +16,7 @@ public class User
     public string Username {get; set;}
     [Required]
     [EmailAddress(ErrorMessage = "Invalid email address.")]
-    [RegularExpression(@"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$", ErrorMessage = "Invalid email address.")]
+    [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Invalid email address.")]
     public string Email {get; set;}
     [Required]
     [RegularExpression(@"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$", ErrorMessage = "Password must contain at least 1 number, 1 letter, and a special character")]
