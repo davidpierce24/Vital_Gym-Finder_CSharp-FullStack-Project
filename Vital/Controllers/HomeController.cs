@@ -89,13 +89,13 @@ public class HomeController : Controller
     {
         if(ModelState.IsValid){
             // validation for unique email
-            if(_context.Users.Any(d => d.Email == newOwner.Email)){
+            if(_context.Owners.Any(d => d.Email == newOwner.Email)){
                 // user email already in db
                 ModelState.AddModelError("Email", "Email is already in use!");
                 return View("Index");
             }
             // validation for unique username
-            if(_context.Users.Any(d => d.Username == newOwner.Username)){
+            if(_context.Owners.Any(d => d.Username == newOwner.Username)){
                 // username already in db
                 ModelState.AddModelError("Username", "Username is already in use!");
                 return View("Index");
@@ -106,6 +106,33 @@ public class HomeController : Controller
             _context.Add(newOwner);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("owner", newOwner.OwnerId);
+            return RedirectToAction("OwnerDashboard");
+        } else {
+            return View("Index");
+        }
+    }
+
+// route to process an owner login -------------------------------------------
+    [HttpPost("owner/login")]
+    public IActionResult LoginOwner(LogOwner loginOwner)
+    {
+        if(ModelState.IsValid){
+            // check to see if email is in db
+            Owner ownerInDb = _context.Owners.FirstOrDefault(d => d.Email == loginOwner.LogEmail);
+            if(ownerInDb == null){
+                // no email in database
+                ModelState.AddModelError("LogEmail", "Invalid login attempt");
+                return View("Index");
+            }
+            // check for hashed password
+            PasswordHasher<LogOwner> Hasher = new PasswordHasher<LogOwner>();
+            var result = Hasher.VerifyHashedPassword(loginOwner, ownerInDb.Password, loginOwner.LogPassword);
+            // if password was incorrect
+            if(result == 0){
+                ModelState.AddModelError("LogEmail", "Invalid login attempt");
+                return View("Index");
+            }
+            HttpContext.Session.SetInt32("owner", ownerInDb.OwnerId);
             return RedirectToAction("OwnerDashboard");
         } else {
             return View("Index");
