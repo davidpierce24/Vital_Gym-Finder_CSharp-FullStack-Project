@@ -27,10 +27,19 @@ public class HomeController : Controller
     }
 
 // Route to display the page for an owner to login or register------------
-    [HttpGet("")]
+    [HttpGet("owner/loginreg")]
+    public IActionResult OwnerLoginReg()
+    {
+        return View();
+    }
 
 
 // Route to display the page for a user to login or register-------------
+    [HttpGet("user/loginreg")]
+    public IActionResult UserLoginReg()
+    {
+        return View();
+    }
 
 
 // Route to display the main home page----------------------------------------

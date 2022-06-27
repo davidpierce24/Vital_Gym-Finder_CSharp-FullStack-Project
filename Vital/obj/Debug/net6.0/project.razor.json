@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\UserLoginReg.cshtml",
+      "TargetPath": "Views\\Home\\UserLoginReg.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -16330,6 +16335,11 @@
     {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\OwnerLoginReg.cshtml",
+      "TargetPath": "Views\\Home\\OwnerLoginReg.cshtml",
       "FileKind": "mvc"
     }
   ],
