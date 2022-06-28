@@ -169,6 +169,14 @@ public IActionResult Home()
         return View();
     }
 
+// Route to take owner to add a gym page -----------------------------------
+    [HttpGet("gym/add")]
+    public IActionResult AddGym()
+    {
+        return View();
+    }
+
+
 // Route to display user dashboard ------------------------------------------
     [HttpGet("user/dashboard")]
     public IActionResult UserDashboard()

@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/AddGym.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZGRHeW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

@@ -6,6 +6,7 @@ html {
   html {
     font-size: 16px;
   }
+
 }
 
 html {
@@ -15,4 +16,24 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 400px;
+}
+
+
+img {
+  object-fit: cover;
+  object-position: 100% 35%;
+  height: 400px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container-main {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-width: 400px;
 }
