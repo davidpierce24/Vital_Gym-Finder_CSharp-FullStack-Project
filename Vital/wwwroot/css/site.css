@@ -2,6 +2,14 @@ html {
   font-size: 14px;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: var(--bs-dark);
+      color: var(--bs-light);
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;

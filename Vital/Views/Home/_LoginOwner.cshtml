@@ -3,15 +3,15 @@
 <form action="/owner/login" method="post">
     <div>
         <label for="LogEmail">Email</label>
-        <input asp-for="LogEmail">
-        <span asp-validation-for="LogEmail"></span>
+        <input asp-for="LogEmail" class="form-control">
+        <span asp-validation-for="LogEmail" class="text-danger"></span>
     </div>
     <div>
         <label for="LogPassword">Password</label>
-        <input asp-for="LogPassword">
-        <span asp-validation-for="LogPassword"></span>
+        <input asp-for="LogPassword" class="form-control">
+        <span asp-validation-for="LogPassword" class="text-danger"></span>
     </div>
     <div>
-        <input type="submit" value="Login">
+        <input type="submit" value="Login" class="btn btn-info">
     </div>
 </form>
