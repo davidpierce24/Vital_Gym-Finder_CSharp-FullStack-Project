@@ -16298,13 +16298,28 @@
   "RootNamespace": "Vital",
   "Documents": [
     {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_LoginUser.cshtml",
+      "TargetPath": "Views\\Home\\_LoginUser.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_LoginOwner.cshtml",
+      "TargetPath": "Views\\Home\\_LoginOwner.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_RegisterUser.cshtml",
+      "TargetPath": "Views\\Home\\_RegisterUser.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16340,6 +16355,11 @@
     {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\OwnerLoginReg.cshtml",
       "TargetPath": "Views\\Home\\OwnerLoginReg.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_RegisterOwner.cshtml",
+      "TargetPath": "Views\\Home\\_RegisterOwner.cshtml",
       "FileKind": "mvc"
     }
   ],
