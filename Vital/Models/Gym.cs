@@ -8,12 +8,19 @@ public class Gym
 {
     [Key]
     public int GymId {get; set;}
+    [Required]
     public string GymName {get; set;}
+    [Required]
     public string Address1 {get; set;}
     public string Address2 {get; set;}
+    [Required]
     public string City {get; set;}
+    [Required]
     public string State {get; set;}
-    public int Zip {get; set;}
+    [Required]
+    [RegularExpression(@"^[1-9][0-9]{5}$", ErrorMessage = "Must be a valid Zip Code")]
+    public string Zip {get; set;}
+    [Required]
     public int OwnerId {get; set;}
     public Owner? Owner {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
