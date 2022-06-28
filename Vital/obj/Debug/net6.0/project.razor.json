@@ -16298,6 +16298,11 @@
   "RootNamespace": "Vital",
   "Documents": [
     {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\OwnerDashboard.cshtml",
+      "TargetPath": "Views\\Home\\OwnerDashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_LoginUser.cshtml",
       "TargetPath": "Views\\Home\\_LoginUser.cshtml",
       "FileKind": "mvc"
@@ -16310,6 +16315,11 @@
     {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\_LoginOwner.cshtml",
       "TargetPath": "Views\\Home\\_LoginOwner.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\UserDashboard.cshtml",
+      "TargetPath": "Views\\Home\\UserDashboard.cshtml",
       "FileKind": "mvc"
     },
     {
