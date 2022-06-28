@@ -8,4 +8,6 @@ public class MyContext : DbContext
     public DbSet<User> Users {get; set;}
     public DbSet<Owner> Owners {get; set;}
     public DbSet<Gym> Gyms {get; set;}
+    public DbSet<Equipment> Equipments {get; set;}
+    public DbSet<Hour> Hours {get; set;}
 }

@@ -4,16 +4,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Vital.Models;
 
-public class Gym
+public class Equipment
 {
     [Key]
-    public int GymId {get; set;}
-    public string GymName {get; set;}
-    public string Address1 {get; set;}
-    public string Address2 {get; set;}
-    public string City {get; set;}
-    public string State {get; set;}
-    public int Zip {get; set;}
+    public int EquipmentId {get; set;}
+    public string EquipmentName {get; set;}
+    public string EquipmentAmount {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 }
