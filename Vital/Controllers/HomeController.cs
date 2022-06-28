@@ -73,7 +73,7 @@ public IActionResult Home()
             _context.Add(newUser);
             _context.SaveChanges();
             HttpContext.Session.SetInt32("user", newUser.UserId);
-            return RedirectToAction("Success");
+            return RedirectToAction("UserDashboard");
         } else {
             return View("Index");
         }
@@ -162,12 +162,19 @@ public IActionResult Home()
         }
     }
 
-
-    public IActionResult Privacy()
+// Route to display owner dashboard -----------------------------------------
+    [HttpGet("owner/dashboard")]
+    public IActionResult OwnerDashboard()
     {
         return View();
     }
 
+// Route to display user dashboard ------------------------------------------
+    [HttpGet("user/dashboard")]
+    public IActionResult UserDashboard()
+    {
+        return View();
+    }
 
 
 
