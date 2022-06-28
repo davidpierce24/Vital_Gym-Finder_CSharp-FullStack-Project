@@ -22,6 +22,8 @@ public class Hour
     public DateTime FridayClose {get; set;}
     public DateTime SaturdayOpen {get; set;}
     public DateTime SaturdayClose {get; set;}
+    public int GymId {get; set;}
+    public Gym? Gym {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
 }

@@ -31,4 +31,5 @@ public class Owner
     public string ConfirmPassword {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
+    public List<Gym> GymsOwned {get; set;} = new List<Gym>();
 }

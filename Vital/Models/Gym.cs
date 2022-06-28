@@ -14,6 +14,10 @@ public class Gym
     public string City {get; set;}
     public string State {get; set;}
     public int Zip {get; set;}
+    public int OwnerId {get; set;}
+    public Owner? Owner {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
+    public List<Hour> GymHours = new List<Hour>();
+    public List<Equipment> GymEquipment = new List<Equipment>();
 }
