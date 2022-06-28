@@ -7,4 +7,5 @@ public class MyContext : DbContext
     public MyContext(DbContextOptions options) : base(options) { }
     public DbSet<User> Users {get; set;}
     public DbSet<Owner> Owners {get; set;}
+    public DbSet<Gym> Gyms {get; set;}
 }
