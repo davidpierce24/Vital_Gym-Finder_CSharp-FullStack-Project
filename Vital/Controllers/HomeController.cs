@@ -43,6 +43,11 @@ public class HomeController : Controller
 
 
 // Route to display the main home page----------------------------------------
+[HttpGet("home")]
+public IActionResult Home()
+{
+    return View();
+}
 
 
 // Route to register a user ------------------------------------------
