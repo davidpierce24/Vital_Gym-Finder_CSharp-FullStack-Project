@@ -12,7 +12,7 @@
     </thead>
     @foreach (Gym g in ViewBag.Owner.GymsOwned)
     {
-        <td>@g.GymName</td>
+        <td><a href="/gym">@g.GymName</a></td>
         <td>@g.Address1, @g.City, @g.State @g.Zip</td>
     }
 </table>

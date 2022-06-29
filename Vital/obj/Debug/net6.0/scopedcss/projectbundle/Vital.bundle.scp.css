@@ -8,8 +8,8 @@ a.navbar-brand[b-z9kibfrt8n] {
   word-break: break-all;
 }
 
-.navbar[b-z9kibfrt8n] {
-  height:50px;
+.navbar-toggler[b-z9kibfrt8n] {
+  font-size: .8rem;
 }
 
 a[b-z9kibfrt8n] {
@@ -51,3 +51,4 @@ button.accept-policy[b-z9kibfrt8n] {
   white-space: nowrap;
   line-height: 60px;
 }
+

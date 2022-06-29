@@ -7,8 +7,8 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-.navbar {
-  height:50px;
+.navbar-toggler {
+  font-size: .8rem;
 }
 
 a {
@@ -50,3 +50,4 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+

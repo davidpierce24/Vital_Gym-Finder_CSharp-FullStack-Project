@@ -23,6 +23,9 @@ public class HomeController : Controller
 // Route to render welcome page where user can select it they are a gym owner or a gym goer
     public IActionResult Index()
     {
+        if(HttpContext.Session.GetInt32("owner") != null){
+            return RedirectToAction("OwnerDashboard");
+        }
         return View();
     }
 
