@@ -8,6 +8,10 @@ a.navbar-brand[b-z9kibfrt8n] {
   word-break: break-all;
 }
 
+.navbar[b-z9kibfrt8n] {
+  height:50px;
+}
+
 a[b-z9kibfrt8n] {
   color: #0077cc;
 }
@@ -25,10 +29,10 @@ a[b-z9kibfrt8n] {
 }
 
 .border-top[b-z9kibfrt8n] {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #777777;
 }
 .border-bottom[b-z9kibfrt8n] {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #777777;
 }
 
 .box-shadow[b-z9kibfrt8n] {
