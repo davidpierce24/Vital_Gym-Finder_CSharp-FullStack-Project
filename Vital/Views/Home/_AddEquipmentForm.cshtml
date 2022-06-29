@@ -1,0 +1,20 @@
+@model Equipment
+
+<form action="" method="post" class="gap-2">
+    <div class="form-group mx-2 mt-2">
+        <label for="EquipmentName">Equiment or Feature Name</label>
+        <input asp-for="EquipmentName" class="form-control">
+        <span asp-validation-for="EquipmentName" class="text-danger"></span>
+    </div>
+    <div class="form-group mx-2 mt-2">
+        <label for="EquipmentAmount">Amount or Size</label>
+        <input asp-for="EquipmentAmount" class="form-control">
+        <span asp-validation-for="EquipmentAmount" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="GymId" class="form-control">
+    </div>
+    <div class="form-group mx-2 mt-2">
+        <input type="submit" class="btn btn-info">
+    </div>
+</form>

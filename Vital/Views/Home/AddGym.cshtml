@@ -3,6 +3,7 @@
 }
 
 <div class="container-main">
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -34,4 +35,32 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <div class="text-center mt-3">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#equipmentModal">
+                    Add Equipment
+                </button>
+                <div class="modal fade" id="equipmentModal" tabindex="-1" aria-labelledby="equipmentModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-black">
+                            <partial name="_AddEquipmentForm"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div>
+
 </div>
