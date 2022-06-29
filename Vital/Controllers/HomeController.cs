@@ -189,9 +189,11 @@ public IActionResult Home()
 
 
 // Route to take owner to add a gym page -----------------------------------
-    [HttpGet("gym")]
-    public IActionResult Gym()
+    [HttpGet("gym/{GymId}")]
+    public IActionResult Gym(int GymId)
     {
+        ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
+        ViewBag.Gym = _context.Gyms.FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
 
