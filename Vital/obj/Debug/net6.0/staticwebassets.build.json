@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FRD1Dhc7ALy+FEhe3EQgcUEDahB2pdv52JohGNd+qdA=",
+  "Hash": "pMxoSwD1OXkbShaaciWuos3TT5oYN5aNKeBblJfiM4o=",
   "Source": "Vital",
   "BasePath": "_content/Vital",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\images\\theRock\\ironParadise.jpg",
-      "SourceId": "Vital",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\",
-      "BasePath": "_content/Vital",
-      "RelativePath": "images/theRock/ironParadise.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\theRock\\ironParadise.jpg"
     },
     {
       "Identity": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\images\\theRock\\ironParadise2.jpeg",
