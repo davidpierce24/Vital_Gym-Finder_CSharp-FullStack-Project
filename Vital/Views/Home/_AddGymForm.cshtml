@@ -1,27 +1,27 @@
 @model Gym
 
-<form action="/gym/process" method="post" class="row g-3 mx-2 mt-1 mb-2 fs-5">
-    <div class="col-12">
+<form action="/gym/process" method="post" class="row mx-2 mt-2 fs-5 fs-5">
+    <div class="col-12 mb-2">
         <label for="GymName" class="form-label">Gym Name</label>
         <input asp-for="GymName" class="form-control">
         <span asp-validation-for="GymName"></span>
     </div>
-    <div class="col-12">
+    <div class="col-12 mb-2">
         <label for="Address1" class="form-label">Address</label>
         <input asp-for="Address1" class="form-control" placeholder="1234 Main St">
         <span asp-validation-for="Address1"></span>
     </div>
-    <div class="col-12">
+    <div class="col-12 mb-2">
         <label for="Address2" class="form-label">Address 2</label>
         <input asp-for="Address2" class="form-control" placeholder="Apartment, suite, studio, or floor">
         <span asp-validation-for="Address2"></span>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5 mb-2">
         <label for="City" class="form-label">City</label>
         <input asp-for="City" class="form-control">
         <span asp-validation-for="City"></span>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4 mb-2">
         <label for="State" class="form-label">State</label>
         <select class="form-select" asp-for="State">
             <option value="">Choose...</option>
@@ -79,7 +79,7 @@
         </select>
         <span asp-validation-for="State"></span>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 mb-2">
         <label for="Zip" class="form-label">Zip</label>
         <input asp-for="Zip" class="form-control">
         <span asp-validation-for="Zip"></span>
@@ -88,6 +88,6 @@
         <input type="hidden" asp-for="OwnerId" value='@Context.Session.GetInt32("owner")'>
     </div>
     <div class="col-12">
-        <button type="submit" class="btn btn-info">Create Gym</button>
+        <button type="submit" class="btn btn-info mb-2">Create Gym</button>
     </div>
 </form>

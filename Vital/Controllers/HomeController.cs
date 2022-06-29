@@ -198,6 +198,19 @@ public IActionResult Home()
     }
 
 
+// Route to process adding hours to a gym --------------------------------
+    [HttpPost("hours/process")]
+    public IActionResult ProcessHours(Hour newHours)
+    {
+        if(ModelState.IsValid){
+            _context.Add(newHours);
+            _context.SaveChanges();
+            return RedirectToAction("Gym", new{GymId = newHours.GymId});
+        } else {
+            return View("_AddHoursForm");
+        }
+    }
+
 // Route to display user dashboard ------------------------------------------
     [HttpGet("user/dashboard")]
     public IActionResult UserDashboard()
