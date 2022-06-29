@@ -3,4 +3,17 @@
 }
 
 <h1>Welcome to your Owner Dashboard!</h1>
-<a href="/gym/add">Add a New Gym</a>
+<button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#equipmentModal">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus"
+        viewBox="0 0 16 16">
+        <path
+            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+    </svg>Add a New Gym
+</button>
+<div class="modal fade" id="equipmentModal" tabindex="-1" aria-labelledby="equipmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-black">
+            <partial name="_AddGymForm" />
+        </div>
+    </div>
+</div>

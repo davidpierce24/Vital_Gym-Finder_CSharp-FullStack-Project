@@ -169,9 +169,23 @@ public IActionResult Home()
         return View();
     }
 
+// Route to process creating a gym -----------------------------------------
+    [HttpPost("gym/process")]
+    public IActionResult ProcessGym(Gym newGym)
+    {
+        if(ModelState.IsValid){
+            _context.Add(newGym);
+            _context.SaveChanges();
+            return RedirectToAction("Gym");
+        } else {
+            return View ("OwnerDashboard");
+        }
+    }
+
+
 // Route to take owner to add a gym page -----------------------------------
-    [HttpGet("gym/add")]
-    public IActionResult AddGym()
+    [HttpGet("gym")]
+    public IActionResult Gym()
     {
         return View();
     }
