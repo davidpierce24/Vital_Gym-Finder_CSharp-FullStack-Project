@@ -25,6 +25,6 @@ public class Gym
     public Owner? Owner {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
-    public List<Hour> GymHours = new List<Hour>();
-    public List<Equipment> GymEquipment = new List<Equipment>();
+    public List<Hour> GymHours {get; set;} = new List<Hour>();
+    public List<Equipment> GymEquipment {get; set;} = new List<Equipment>();
 }

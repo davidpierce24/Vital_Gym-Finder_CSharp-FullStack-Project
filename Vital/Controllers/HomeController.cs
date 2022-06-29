@@ -193,7 +193,7 @@ public IActionResult Home()
     public IActionResult Gym(int GymId)
     {
         ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
-        ViewBag.Gym = _context.Gyms.FirstOrDefault(d => d.GymId == GymId);
+        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
 
