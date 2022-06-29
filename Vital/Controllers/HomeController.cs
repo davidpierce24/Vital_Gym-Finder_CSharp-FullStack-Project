@@ -165,7 +165,8 @@ public IActionResult Home()
 // Route to display owner dashboard -----------------------------------------
     [HttpGet("owner/dashboard")]
     public IActionResult OwnerDashboard()
-    {
+    {   
+        ViewBag.Owner = _context.Owners.Include(d => d.GymsOwned).FirstOrDefault(d => d.OwnerId == HttpContext.Session.GetInt32("owner"));
         return View();
     }
 
