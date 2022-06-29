@@ -42,22 +42,127 @@
     </div>
 
     <div class="row mt-2">
-        <div class="col-6">
+        <div class="col-8">
             <h5 class="h5"> Address: @ViewBag.Gym.Address1, @ViewBag.Gym.City, @ViewBag.Gym.State @ViewBag.Gym.Zip</h5>
         </div>
-        <div class="col-6">
-            <h5 class="h5">Hours: </h5>
-            
+        <div class="col-4">
+            @foreach (Hour h in ViewBag.Gym.GymHours)
+            {
+                @if(DateTime.Now.ToString("dddd") == "Sunday"){
+                    
+                    string open = h.SundayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.SundayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Monday"){
+                    
+                    string open = h.MondayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.MondayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Tuesday"){
+                    
+                    string open = h.TuesdayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.TuesdayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Wednesday"){
+                    
+                    string open = h.WednesdayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.WednesdayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Thursday"){
+                    
+                    string open = h.ThursdayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.ThursdayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Friday"){
+                    
+                    string open = h.FridayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.FridayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+                @if(DateTime.Now.ToString("dddd") == "Saturday"){
+                    
+                    string open = h.SaturdayOpen?.ToString("hh.mm");
+                    double o = Convert.ToDouble(open);
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
+                    string close = h.SaturdayClose?.ToString("hh.mm");
+                    double c = Convert.ToDouble(close);
+                    if(time < o || time > c){
+                        <h5 class="h5 text-success">Open </h5>
+                    } else {
+                        <h5 class="h5 text-danger">Closed </h5>
+                    }
+                }
+            }
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-8">
                 <iframe frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed/v1/place?key=@ViewBag.MapsApi&q=@ViewBag.Gym.Address1,@ViewBag.Gym.City,@ViewBag.Gym.State,@ViewBag.Gym.Zip"
                     allowfullscreen>
                 </iframe>
             </div>
-            <div class="col-6">
-                <button type="button" class="btn btn-info fs-5" data-bs-toggle="modal" data-bs-target="#HoursModal">
+            <div class="col-4">
+                <div>
+                    <h5 class="h5 mx-2">Hours: </h5>
+                    @foreach (Hour h in ViewBag.Gym.GymHours)
+                    {
+                        <p class="mx-2">Sunday: @h.SundayOpen?.ToString("hh:mm tt") - @h.SundayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Monday: @h.MondayOpen?.ToString("hh:mm tt") - @h.MondayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Tuesday: @h.TuesdayOpen?.ToString("hh:mm tt") - @h.TuesdayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Wednesday: @h.WednesdayOpen?.ToString("hh:mm tt") - @h.WednesdayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Thursday: @h.ThursdayOpen?.ToString("hh:mm tt") - @h.ThursdayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Friday: @h.FridayOpen?.ToString("hh:mm tt") - @h.FridayClose?.ToString("hh:mm tt")</p>
+                        <p class="mx-2">Saturday: @h.SaturdayOpen?.ToString("hh:mm tt") - @h.SaturdayClose?.ToString("hh:mm tt")</p>
+                    } 
+                </div>
+                <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#HoursModal">
                     <i class="bi bi-plus"></i>
                     Add Hours
                 </button>
