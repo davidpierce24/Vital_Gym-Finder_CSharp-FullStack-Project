@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UEDEz/ujTqDs1gdPHXu8ixMcq0LnSKF2GWiqPonZB5g=",
+  "Hash": "FRD1Dhc7ALy+FEhe3EQgcUEDahB2pdv52JohGNd+qdA=",
   "Source": "Vital",
   "BasePath": "_content/Vital",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\theRock\\The-Rocks-home-gyms.webp"
+    },
+    {
+      "Identity": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\images\\vital.png",
+      "SourceId": "Vital",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\",
+      "BasePath": "_content/Vital",
+      "RelativePath": "images/vital.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\vital.png"
     },
     {
       "Identity": "D:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\wwwroot\\js\\site.js",
