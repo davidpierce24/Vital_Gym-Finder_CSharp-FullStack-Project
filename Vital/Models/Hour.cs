@@ -9,33 +9,33 @@ public class Hour
     [Key]
     public int HourId {get; set;}
     [DataType(DataType.Time)]
-    public DateTime SundayOpen {get; set;}
+    public DateTime? SundayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime SundayClose {get; set;}
+    public DateTime? SundayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime MondayOpen {get; set;}
+    public DateTime? MondayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime MondayClose {get; set;}
+    public DateTime? MondayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime TuesdayOpen {get; set;}
+    public DateTime? TuesdayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime TuesdayClose {get; set;}
+    public DateTime? TuesdayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime WednesdayOpen {get; set;}
+    public DateTime? WednesdayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime WednesdayClose {get; set;}
+    public DateTime? WednesdayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime ThursdayOpen {get; set;}
+    public DateTime? ThursdayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime ThursdayClose {get; set;}
+    public DateTime? ThursdayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime FridayOpen {get; set;}
+    public DateTime? FridayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime FridayClose {get; set;}
+    public DateTime? FridayClose {get; set;}
     [DataType(DataType.Time)]
-    public DateTime SaturdayOpen {get; set;}
+    public DateTime? SaturdayOpen {get; set;}
     [DataType(DataType.Time)]
-    public DateTime SaturdayClose {get; set;}
+    public DateTime? SaturdayClose {get; set;}
     [Required]
     public int GymId {get; set;}
     public Gym? Gym {get; set;}
