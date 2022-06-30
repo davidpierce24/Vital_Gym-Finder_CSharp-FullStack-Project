@@ -35,9 +35,6 @@ iframe {
   width: 100%
 }
 
-#equipment-card:hover {
-  transform: scale(1.1);
-}
 
 html {
   position: relative;

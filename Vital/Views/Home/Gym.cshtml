@@ -233,7 +233,7 @@
             @foreach (Equipment e in ViewBag.Gym.GymEquipment)
             {
                 <div class="col-2 d-flex align-items-stretch">
-                    <div class="card mb-2" id="equipment-card" type="button" data-bs-toggle="modal" data-bs-target="#EditequipmentModal">
+                    <div class="card mb-2" id="equipment-card">
                         <div class="card-body text-center">
                             <h5 class="h3">@e.EquipmentAmount</h5>
                             <p class="fs-5">@e.EquipmentName</p>
@@ -243,8 +243,8 @@
             }
         </div>
         <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-info fs-5" data-bs-toggle="modal" data-bs-target="#equipmentModal">
+            <div class="col">
+                <button type="button" class="btn btn-info fs-5 mx-1" data-bs-toggle="modal" data-bs-target="#equipmentModal">
                     <i class="bi bi-plus"></i>
                     Add Equipment
                 </button>
@@ -256,18 +256,26 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-12">
-                <div class="modal fade" id="EditequipmentModal" tabindex="-1" aria-labelledby="EditequipmentModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content text-black">
-                            <partial name="_EditEquipmentForm"/>
+                @if(ViewBag.Gym.GymEquipment != null){
+                    <button type="button" class="btn btn-info fs-5" data-bs-toggle="modal" data-bs-target="#EditequipmentModal">
+                    <i class="bi bi-plus"></i>
+                    Edit Equipment
+                    </button>
+                    <div class="modal fade" id="EditequipmentModal" tabindex="-1" aria-labelledby="EditequipmentModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-black">
+                                <partial name="_EditEquipmentForm"/>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
+                
             </div>
+            
+            
+                
+            
         </div>
     </div>
 

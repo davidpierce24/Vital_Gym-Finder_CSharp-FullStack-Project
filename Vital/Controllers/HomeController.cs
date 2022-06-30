@@ -249,6 +249,18 @@ public IActionResult Home()
         }
     }
 
+// Route to process editing gym equipment ------------------------------
+    [HttpPost("equipment/edit/{GymId}")]
+    public IActionResult UpdateEquipment(Equipment editEquipment, int GymId)
+    {
+        Equipment oldEquipment = _context.Equipments.FirstOrDefault(d => d.EquipmentId == editEquipment.EquipmentId);
+        oldEquipment.EquipmentName = editEquipment.EquipmentName;
+        oldEquipment.EquipmentAmount = editEquipment.EquipmentAmount;
+        oldEquipment.UpdatedAt = DateTime.Now;
+        _context.SaveChanges();
+        return RedirectToAction("Gym", new{GymId = GymId});
+    }
+
 
 
 
