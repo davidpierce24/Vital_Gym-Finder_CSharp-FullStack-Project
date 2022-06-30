@@ -55,10 +55,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.SundayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                        @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        } 
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Monday"){
@@ -68,10 +72,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.MondayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Tuesday"){
@@ -81,10 +89,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.TuesdayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Wednesday"){
@@ -94,10 +106,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.WednesdayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Thursday"){
@@ -107,10 +123,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.ThursdayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Friday"){
@@ -120,10 +140,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.FridayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
                 @if(DateTime.Now.ToString("dddd") == "Saturday"){
@@ -133,10 +157,14 @@
                     double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
                     string close = h.SaturdayClose?.ToString("hh.mm");
                     double c = Convert.ToDouble(close);
-                    if(time < o || time > c){
-                        <h5 class="h5 text-success">Open </h5>
+                    if(time < c && time >= o){
+                        <h5 class="h5 text-success">Open
+                            @if(c-time <= 1){
+                            <span class="text-warning fs-6 ">- Closing soon</span>
+                        }
+                        </h5>
                     } else {
-                        <h5 class="h5 text-danger">Closed </h5>
+                        <h5 class="h5 text-danger">Closed</h5>
                     }
                 }
             }
