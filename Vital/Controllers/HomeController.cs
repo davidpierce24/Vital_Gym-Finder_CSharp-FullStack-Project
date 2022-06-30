@@ -193,7 +193,7 @@ public IActionResult Home()
     public IActionResult Gym(int GymId)
     {
         ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
-        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).FirstOrDefault(d => d.GymId == GymId);
+        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
 
@@ -210,6 +210,20 @@ public IActionResult Home()
             return View("_AddHoursForm");
         }
     }
+
+// Route to process adding equipment to a gym -----------------------------
+    [HttpPost("equipment/process")]
+    public IActionResult ProcessEquipment(Equipment newEquipment)
+    {
+        if(ModelState.IsValid){
+            _context.Add(newEquipment);
+            _context.SaveChanges();
+            return RedirectToAction("Gym", new{GymId = newEquipment.GymId});
+        } else {
+            return View("_AddEquipmentForm");
+        }
+    }
+
 
 // Route to display user dashboard ------------------------------------------
     [HttpGet("user/dashboard")]

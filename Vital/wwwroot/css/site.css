@@ -31,6 +31,10 @@ iframe {
 
 }
 
+#equipment-card {
+  width: 100%
+}
+
 html {
   position: relative;
   min-height: 100%;

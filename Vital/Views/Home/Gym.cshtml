@@ -207,7 +207,19 @@
     </div>
 
     <div class="text-center mt-3">
-
+        <div class="row mb-2">
+            @foreach (Equipment e in ViewBag.Gym.GymEquipment)
+            {
+                <div class="col-2 d-flex align-items-stretch">
+                    <div class="card" id="equipment-card">
+                        <div class="card-body text-center">
+                            <h5 class="h3">@e.EquipmentAmount</h5>
+                            <p class="fs-5">@e.EquipmentName</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-info fs-5" data-bs-toggle="modal" data-bs-target="#equipmentModal">
@@ -223,15 +235,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
-            <div class="col">
-
-            </div>
+            
         </div>
     </div>
 
