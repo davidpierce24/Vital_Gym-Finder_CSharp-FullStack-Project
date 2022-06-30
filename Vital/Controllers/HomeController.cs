@@ -211,6 +211,31 @@ public IActionResult Home()
         }
     }
 
+// Route to process editing gym hours ------------------------------------
+    [HttpPost("hours/edit")]
+    public IActionResult UpdateHours(Hour editHours)
+    {
+        Hour oldHours = _context.Hours.FirstOrDefault(d => d.HourId == editHours.HourId);
+        oldHours.SundayOpen = editHours.SundayOpen;
+        oldHours.SundayClose = editHours.SundayClose;
+        oldHours.MondayOpen = editHours.MondayOpen;
+        oldHours.MondayClose = editHours.MondayClose;
+        oldHours.TuesdayOpen = editHours.TuesdayOpen;
+        oldHours.TuesdayClose = editHours.TuesdayClose;
+        oldHours.WednesdayOpen = editHours.WednesdayOpen;
+        oldHours.WednesdayClose = editHours.WednesdayClose;
+        oldHours.ThursdayOpen = editHours.ThursdayOpen;
+        oldHours.ThursdayClose = editHours.ThursdayClose;
+        oldHours.FridayOpen = editHours.FridayOpen;
+        oldHours.FridayClose = editHours.FridayClose;
+        oldHours.SaturdayOpen = editHours.SaturdayOpen;
+        oldHours.SaturdayClose = editHours.SaturdayClose;
+        oldHours.UpdatedAt = DateTime.Now;
+        _context.SaveChanges();
+        return RedirectToAction("Gym", new{GymId = editHours.GymId});
+    }
+
+
 // Route to process adding equipment to a gym -----------------------------
     [HttpPost("equipment/process")]
     public IActionResult ProcessEquipment(Equipment newEquipment)

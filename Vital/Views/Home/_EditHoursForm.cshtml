@@ -2,7 +2,7 @@
 
 @foreach (Hour h in ViewBag.Gym.GymHours)
 {
-    <form action="/hours/process" method="post" class="mx-2 mt-2 fs-5">
+    <form action="/hours/edit" method="post" class="mx-2 mt-2 fs-5">
         <div class="row">
             <div class="col-6 mb-2">
                 <label for="SundayOpen">Sunday: Open</label>
@@ -76,6 +76,9 @@
             </div>
             <div>
                 <input type="hidden" asp-for="GymId" value="@ViewBag.Gym.GymId">
+            </div>
+            <div>
+                <input type="hidden" asp-for="HourId" value="@h.HourId">
             </div>
             <div>
                 <input type="submit" value="Edit Hours" class="btn btn-info mb-2">
