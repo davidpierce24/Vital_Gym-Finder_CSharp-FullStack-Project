@@ -190,18 +190,39 @@
                         <p class="mx-2">Saturday: @h.SaturdayOpen?.ToString("hh:mm tt") - @h.SaturdayClose?.ToString("hh:mm tt")</p>
                     } 
                 </div>
-                <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#HoursModal">
-                    <i class="bi bi-plus"></i>
-                    Add Hours
-                </button>
-                <div class="modal fade" id="HoursModal" tabindex="-1" aria-labelledby="HoursModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content text-black">
-                            <partial name="_AddHoursForm" />
+                @if(ViewBag.Gym.GymHours == null){
+                    @* add hours modal *@
+                    <div>
+                        <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#HoursModal">
+                        <i class="bi bi-plus"></i>
+                        Add Hours
+                        </button>
+                        <div class="modal fade" id="HoursModal" tabindex="-1" aria-labelledby="HoursModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content text-black">
+                                    <partial name="_AddHoursForm" />
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                } else {
+                    @* edit hours modal *@
+                    <div>
+                        <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#HoursModal">
+                        <i class="bi bi-plus"></i>
+                        Edit Hours
+                        </button>
+                        <div class="modal fade" id="HoursModal" tabindex="-1" aria-labelledby="HoursModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content text-black">
+                                    <partial name="_EditHoursForm" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
@@ -211,7 +232,7 @@
             @foreach (Equipment e in ViewBag.Gym.GymEquipment)
             {
                 <div class="col-2 d-flex align-items-stretch">
-                    <div class="card" id="equipment-card">
+                    <div class="card mb-2" id="equipment-card">
                         <div class="card-body text-center">
                             <h5 class="h3">@e.EquipmentAmount</h5>
                             <p class="fs-5">@e.EquipmentName</p>
@@ -221,7 +242,7 @@
             }
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <button type="button" class="btn btn-info fs-5" data-bs-toggle="modal" data-bs-target="#equipmentModal">
                     <i class="bi bi-plus"></i>
                     Add Equipment
