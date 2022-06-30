@@ -2,6 +2,7 @@
     ViewData["Title"] = "Add a Gym";
 }
 
+
 <div class="container-main">
     <div class="row">
         <div class="col-12">
@@ -50,10 +51,10 @@
             {
                 @if(DateTime.Now.ToString("dddd") == "Sunday"){
                     
-                    string open = h.SundayOpen?.ToString("hh.mm");
+                    string open = h.SundayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.SundayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.SundayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -67,10 +68,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Monday"){
                     
-                    string open = h.MondayOpen?.ToString("hh.mm");
+                    string open = h.MondayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.MondayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.MondayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -84,10 +85,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Tuesday"){
                     
-                    string open = h.TuesdayOpen?.ToString("hh.mm");
+                    string open = h.TuesdayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.TuesdayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.TuesdayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -101,10 +102,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Wednesday"){
                     
-                    string open = h.WednesdayOpen?.ToString("hh.mm");
+                    string open = h.WednesdayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.WednesdayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.WednesdayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -118,10 +119,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Thursday"){
                     
-                    string open = h.ThursdayOpen?.ToString("hh.mm");
+                    string open = h.ThursdayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.ThursdayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.ThursdayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -135,10 +136,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Friday"){
                     
-                    string open = h.FridayOpen?.ToString("hh.mm");
+                    string open = h.FridayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.FridayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.FridayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -152,10 +153,10 @@
                 }
                 @if(DateTime.Now.ToString("dddd") == "Saturday"){
                     
-                    string open = h.SaturdayOpen?.ToString("hh.mm");
+                    string open = h.SaturdayOpen?.ToString("HH.mm");
                     double o = Convert.ToDouble(open);
-                    double time = DateTime.Now.Hour + (DateTime.Now.Minute/100);
-                    string close = h.SaturdayClose?.ToString("hh.mm");
+                    double time = DateTime.Now.Hour + (DateTime.Now.Minute *.01);
+                    string close = h.SaturdayClose?.ToString("HH.mm");
                     double c = Convert.ToDouble(close);
                     if(time < c && time >= o){
                         <h5 class="h5 text-success">Open
@@ -232,7 +233,7 @@
             @foreach (Equipment e in ViewBag.Gym.GymEquipment)
             {
                 <div class="col-2 d-flex align-items-stretch">
-                    <div class="card mb-2" id="equipment-card">
+                    <div class="card mb-2" id="equipment-card" type="button" data-bs-toggle="modal" data-bs-target="#EditequipmentModal">
                         <div class="card-body text-center">
                             <h5 class="h3">@e.EquipmentAmount</h5>
                             <p class="fs-5">@e.EquipmentName</p>
@@ -257,6 +258,16 @@
                 </div>
             </div>
             
+            <div class="col-12">
+                <div class="modal fade" id="EditequipmentModal" tabindex="-1" aria-labelledby="EditequipmentModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-black">
+                            <partial name="_EditEquipmentForm"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
