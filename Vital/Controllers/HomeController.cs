@@ -215,6 +215,7 @@ public IActionResult Home()
         }
     }
 
+
 // Route to process editing gym hours ------------------------------------
     [HttpPost("hours/edit")]
     public IActionResult UpdateHours(Hour editHours)
