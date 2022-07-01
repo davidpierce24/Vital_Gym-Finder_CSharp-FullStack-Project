@@ -13,7 +13,7 @@
 
 <body class="bg-dark">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark  box-shadow mb-1 py-1">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark box-shadow mb-1 py-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="\images\vital.png" alt="" width="30" height="24"
@@ -33,7 +33,28 @@
                             <a class="nav-link" asp-area="" asp-controller="Home"
                                 asp-action="OwnerDashboard">Dashboard</a>
                         </li>
+                        
                     </ul>
+                    @if(Context.Session.GetInt32("owner") != null){
+                        <div class="nav-item d-flex">
+                            <a class="nav-link" asp-area="" asp-controller="Home"
+                                asp-action="OwnerDashboard"><img src="\images\user-icon.jpg" alt="#" id="nav-img">
+                            </a>
+                        </div>
+                    } else if(Context.Session.GetInt32("user") != null) {
+                        <div class="nav-item d-flex">
+                            <a class="nav-link" asp-area="" asp-controller="Home"
+                                asp-action="UserDashboard"><img src="\images\user-icon.jpg" alt="#" id="nav-img">
+                            </a>
+                        </div>
+                    } else {
+                        <div class="nav-item d-flex">
+                            <a class="nav-link" asp-area="" asp-controller="Home"
+                                asp-action="Index"><img src="\images\user-icon.jpg" alt="#" id="nav-img">
+                            </a>
+                        </div>
+                    }
+                    
                 </div>
             </div>
         </nav>
