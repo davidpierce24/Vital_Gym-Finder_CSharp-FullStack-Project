@@ -182,7 +182,8 @@ public IActionResult Home()
         if(ModelState.IsValid){
             _context.Add(newGym);
             _context.SaveChanges();
-            return RedirectToAction("Gym");
+            
+            return RedirectToAction("OwnerDashboard");
         } else {
             ViewBag.Owner = _context.Owners.Include(d => d.GymsOwned).FirstOrDefault(d => d.OwnerId == HttpContext.Session.GetInt32("owner"));
             return View ("OwnerDashboard");
@@ -196,6 +197,7 @@ public IActionResult Home()
     {
         ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
         ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).FirstOrDefault(d => d.GymId == GymId);
+        ViewBag.Hours = _context.Hours.FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
 

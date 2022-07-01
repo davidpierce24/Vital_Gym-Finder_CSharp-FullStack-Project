@@ -36,9 +36,29 @@ iframe {
 }
 
 #home-card {
-  width: 15rem;
-  height: 15rem;
+  width: 18rem;
+  height: 18rem;
 }
+
+#none:hover {
+  transform: scale(1.01);
+}
+
+#none {
+  text-decoration: none;
+}
+
+.homec {
+  padding: 1rem;
+  display: flex;
+  justify-content: start;
+}
+
+/* .card-img-top {
+  width: 18rem;
+  height: 12rem;
+} */
+
 
 
 html {

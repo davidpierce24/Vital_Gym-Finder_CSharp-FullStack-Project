@@ -180,6 +180,7 @@
             <div class="col-4">
                 <div>
                     <h5 class="h5 mx-2">Hours: </h5>
+                    
                     @foreach (Hour h in ViewBag.Gym.GymHours)
                     {
                         <p class="mx-2">Sunday: @h.SundayOpen?.ToString("hh:mm tt") - @h.SundayClose?.ToString("hh:mm tt")</p>
@@ -191,7 +192,16 @@
                         <p class="mx-2">Saturday: @h.SaturdayOpen?.ToString("hh:mm tt") - @h.SaturdayClose?.ToString("hh:mm tt")</p>
                     } 
                 </div>
-                @if(ViewBag.Gym.GymHours == null){
+
+                @{
+                    int check = 0;
+                    foreach (Hour h in ViewBag.Gym.GymHours)
+                    {
+                        check++;
+                    }
+                }
+                
+                @if(check == 0){
                     @* add hours modal *@
                     <div>
                         <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#HoursModal">
