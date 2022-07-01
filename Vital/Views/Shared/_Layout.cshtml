@@ -19,7 +19,7 @@
                     <img src="\images\vital.png" alt="" width="30" height="24"
                         class="d-inline-block align-text-top" id="nav-img">
                 </a>
-                <a class="navbar-brand text-info" asp-area="" asp-controller="Home" asp-action="Index">Vital</a>
+                <a class="navbar-brand text-info" asp-area="" asp-controller="Home" asp-action="Home">Vital</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,7 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Home">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home"
-                                asp-action="OwnerDashboard">Dashboard</a>
-                        </li>
+                        
                         
                     </ul>
                     @if(Context.Session.GetInt32("owner") != null){
