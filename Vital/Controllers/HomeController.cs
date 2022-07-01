@@ -273,6 +273,16 @@ public IActionResult Home()
     }
 
 
+// Route to display a gym to a user ---------------------------------------
+    [HttpGet("gym/display/{GymId}")]
+    public IActionResult DisplayGym(int GymId)
+    {
+        ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
+        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).FirstOrDefault(d => d.GymId == GymId);
+        return View();
+    }
+
+
 
 
 

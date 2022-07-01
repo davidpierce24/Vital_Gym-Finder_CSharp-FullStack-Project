@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\DisplayGym.cshtml",
+      "TargetPath": "Views\\Home\\DisplayGym.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Code\\Practice_For_Fun\\c#\\Vital-GymFinder\\Vital\\Views\\Home\\UserDashboard.cshtml",
       "TargetPath": "Views\\Home\\UserDashboard.cshtml",
       "FileKind": "mvc"
