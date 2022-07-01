@@ -35,6 +35,11 @@ iframe {
   width: 100%
 }
 
+#home-card {
+  width: 15rem;
+  height: 15rem;
+}
+
 
 html {
   position: relative;
