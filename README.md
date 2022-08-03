@@ -1,11 +1,11 @@
 # Vital - a C# .NET app for finding gyms
 
-I made this project recently after I learned Python so I could grow my skills in data science and hopefully learn more about machine learning. This app allows the user to type in a ticker symbol for any stock and see the recent pricing chart as well as a chart forecasting prices in the near future. This forecast is using the Prophet machine learning model from Meta, which builds its forecast from the stock's previous price data. I don't know a tremendous amount about data science in Python and much less about machine learning, but this was a really cool project to start exploring and learn about some of the Python data science basics. I'm definitely hoping to dive in more in the future.
+This is an app I had been wanting to make for years, and I felt like I was finally capable when I learned C# .NET. This app is supposed to be similar to Yelp, but specifically catered to gym owners and gym goers. Gym owners can create an account / page for their gym / gyms that users can go look at to learn more about the gym. It's similar to a social media profile. The owner can add the gym address, hours, equipment, classes and eventually other information. It has full CRUD functionality and is, but still needs a few additions. I think it would be much closer to a finished product if owners could add pictures and users could add their location and see gyms catered toward their current area.
 
 ## Tools Used
 
 - C#
-- .NET 6
+- ASP.NET Core 6
 - Bootstrap
 - MySQL
 - LINQ
@@ -14,7 +14,9 @@ I made this project recently after I learned Python so I could grow my skills in
 [Champ View](https://lol-react-app.vercel.app/) -->
 
 ### Future additions
-- Add sentiment analysis based on tweets
-- Build out more feature to grow to a full dashboard
+- Gym picture uploads
+- More fleshed out front-end
+- User geo-location and gym filtering based on that location
+- Search for gyms
 
 
