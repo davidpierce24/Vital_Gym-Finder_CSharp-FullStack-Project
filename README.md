@@ -4,12 +4,11 @@ I made this project recently after I learned Python so I could grow my skills in
 
 ## Tools Used
 
-- Python
-- Streamlit
-- Prophet Forecasting Model
-- Plotly
-- Anaconda
-- Pandas
+- C#
+- .NET 6
+- Bootstrap
+- MySQL
+- LINQ
 
 <!-- ### `Check it out here`
 [Champ View](https://lol-react-app.vercel.app/) -->
