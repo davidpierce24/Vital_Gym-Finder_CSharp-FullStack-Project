@@ -9,6 +9,8 @@ public class GymPic
     [Key]
     public int GymPicId {get; set;}
     [Required]
+    public string ImageLink {get; set;}
+    [Required]
     public int GymId {get; set;}
     public Gym? Gym {get; set;}
     public DateTime CreatedAt {get; set;} = DateTime.Now;
