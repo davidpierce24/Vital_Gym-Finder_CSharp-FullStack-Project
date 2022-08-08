@@ -196,7 +196,7 @@ public IActionResult Home()
     public IActionResult Gym(int GymId)
     {
         ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
-        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).FirstOrDefault(d => d.GymId == GymId);
+        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).Include(d => d.GymPics).FirstOrDefault(d => d.GymId == GymId);
         ViewBag.Hours = _context.Hours.FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
@@ -282,7 +282,7 @@ public IActionResult Home()
     public IActionResult DisplayGym(int GymId)
     {
         ViewBag.MapsApi = _config["GoogleMaps:ApiKey"];
-        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).FirstOrDefault(d => d.GymId == GymId);
+        ViewBag.Gym = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymEquipment).Include(d => d.GymPics).FirstOrDefault(d => d.GymId == GymId);
         return View();
     }
 
