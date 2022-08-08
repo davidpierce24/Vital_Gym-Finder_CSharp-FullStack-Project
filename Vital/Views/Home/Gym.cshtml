@@ -19,8 +19,17 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        @{
+            int PicCheck = 0;
+            foreach (GymPic p in ViewBag.Gym.GymPics)
+            {
+                PicCheck++;
+            }
+        }
+
         <div class="carousel-inner">
-            @if(ViewBag.Gym.GymPics != null){
+            @if(PicCheck != 0){
                 @foreach (GymPic p in ViewBag.Gym.GymPics)
                 {
                     <div class="carousel-item">
@@ -34,6 +43,12 @@
             <div class="carousel-item">
                 <img src="\images\theRock\ironParadise2.jpeg" class="d-block w-100" alt="...">
             </div> *@
+            } else {
+                <div class="carousel-item active">
+                        <div  class="d-flex w-100 justify-content-center align-items-center" style="height: 300px" > 
+                            <p class="fs-5">Add Your Images Here</p>
+                        </div>
+                </div>
             }
             
         </div>
@@ -50,6 +65,7 @@
     </div>
 
     <div class="row mt-2">
+
         <div class="col-8">
             <h5 class="h5"> Address: @ViewBag.Gym.Address1, @ViewBag.Gym.City, @ViewBag.Gym.State @ViewBag.Gym.Zip</h5>
         </div>
