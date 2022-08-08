@@ -27,4 +27,5 @@ public class Gym
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
     public List<Hour> GymHours {get; set;} = new List<Hour>();
     public List<Equipment> GymEquipment {get; set;} = new List<Equipment>();
+    public List<GymPic> GymPics {get; set;} = new List<GymPic>();
 }
