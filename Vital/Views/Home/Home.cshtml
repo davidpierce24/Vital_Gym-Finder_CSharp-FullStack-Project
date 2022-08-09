@@ -10,7 +10,7 @@
         {
             <a href="/gym/display/@g.GymId" id="none" class="col-2 d-flex align-items-stretch">
                 <div class="card" id="home-card">
-                    <img src="\images\theRock\ironParadise2.jpeg" alt="#" class="card-img-top">
+                    <img src="@g.GymPics.First().ImageLink" alt="#" class="card-img-top img-fluid">
                     <div class="card-body row homec">
                         <h5 class="card-title fs-5">@g.GymName</h5>
                         <p>@g.Address1, @g.City, @g.State @g.Zip</p>

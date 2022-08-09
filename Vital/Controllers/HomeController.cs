@@ -49,7 +49,7 @@ public class HomeController : Controller
 [HttpGet("home")]
 public IActionResult Home()
 {
-    ViewBag.Gyms = _context.Gyms.Include(d => d.GymHours).ToList();
+    ViewBag.Gyms = _context.Gyms.Include(d => d.GymHours).Include(d => d.GymPics).ToList();
     return View();
 }
 
