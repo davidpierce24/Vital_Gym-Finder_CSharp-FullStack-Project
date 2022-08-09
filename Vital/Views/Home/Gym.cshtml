@@ -30,11 +30,20 @@
 
         <div class="carousel-inner">
             @if(PicCheck != 0){
+                int PicCount = 0;
                 @foreach (GymPic p in ViewBag.Gym.GymPics)
                 {
-                    <div class="carousel-item active">
-                        <img src="@p.ImageLink" class="d-block w-100 img-fluid" alt="...">
-                    </div>
+                    if(PicCount > 0)
+                    {
+                        <div class="carousel-item">
+                            <img src="@p.ImageLink" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    } else {
+                        <div class="carousel-item active">
+                            <img src="@p.ImageLink" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    }
+                PicCount ++;
                 }
             @* <div class="carousel-item active">
                 <img src="\images\theRock\The-Rock-Home-Gym.png" class="d-block w-100" alt="...">
