@@ -201,6 +201,19 @@ public IActionResult Home()
         return View();
     }
 
+// Route to process adding an image to a gym -------------------------
+    [HttpPost("gympic/process")]
+    public IActionResult ProcessGymPic(GymPic newGymPic)
+    {
+        if(ModelState.IsValid){
+            _context.Add(newGymPic);
+            _context.SaveChanges();
+            return RedirectToAction("Gym", new{GymId = newGymPic.GymId});
+        } else {
+            return View("_AddGymPicsForm");
+        }
+    }
+
 
 // Route to process adding hours to a gym --------------------------------
     [HttpPost("hours/process")]
