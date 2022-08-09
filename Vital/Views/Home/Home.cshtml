@@ -8,9 +8,10 @@
     <div class="row mb-2">
         @foreach (Gym g in ViewBag.Gyms)
         {
-            <a href="/gym/display/@g.GymId" id="none" class="col-2 d-flex align-items-stretch">
+            <a href="/gym/display/@g.GymId" id="none" class="col-2 d-flex align-items-stretch flex-wrap">
                 <div class="card" id="home-card">
-                    <img src="@g.GymPics.First().ImageLink" alt="#" class="card-img-top img-fluid">
+                    @* idk why but first() show last image and last() shows first image *@
+                    <img src="@g.GymPics.Last().ImageLink" alt="#" class="card-img-top">
                     <div class="card-body row homec">
                         <h5 class="card-title fs-5">@g.GymName</h5>
                         <p>@g.Address1, @g.City, @g.State @g.Zip</p>

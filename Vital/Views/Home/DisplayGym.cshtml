@@ -19,16 +19,39 @@
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        @{
+            int PicCheck = 0;
+            foreach (GymPic p in ViewBag.Gym.GymPics)
+            {
+                PicCheck++;
+            }
+        }
+
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="\images\theRock\The-Rock-Home-Gym.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="\images\theRock\The-Rocks-home-gyms.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="\images\theRock\ironParadise2.jpeg" class="d-block w-100" alt="...">
-            </div>
+            @if(PicCheck != 0){
+                int PicCount = 0;
+                @foreach (GymPic p in ViewBag.Gym.GymPics)
+                {
+                    if(PicCount > 0)
+                    {
+                        <div class="carousel-item">
+                            <img src="@p.ImageLink" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    } else {
+                        <div class="carousel-item active">
+                            <img src="@p.ImageLink" class="d-block w-100 img-fluid" alt="...">
+                        </div>
+                    }
+                PicCount ++;
+                }
+            } else {
+                <div class="carousel-item active">
+                        <div class="d-flex w-100 justify-content-center align-items-center" style="height: 300px" > 
+                            <p class="fs-5">This Gym does not have any pictures yet</p>
+                        </div>
+                </div>
+            }
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
