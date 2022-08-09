@@ -65,7 +65,22 @@
     </div>
 
     <div class="row mt-2">
-
+        <div class="col-12 m-2 d-flex justify-content-center">
+            <div>
+                <button type="button" class="btn btn-info fs-5 mx-2" data-bs-toggle="modal" data-bs-target="#PicsModal">
+                <i class="bi bi-plus"></i>
+                Add Image Links
+                </button>
+                <div class="modal fade" id="PicsModal" tabindex="-1" aria-labelledby="PicsModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-black">
+                            <partial name="_AddGymPicsForm" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-8">
             <h5 class="h5"> Address: @ViewBag.Gym.Address1, @ViewBag.Gym.City, @ViewBag.Gym.State @ViewBag.Gym.Zip</h5>
         </div>

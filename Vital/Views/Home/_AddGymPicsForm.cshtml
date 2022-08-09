@@ -1,0 +1,15 @@
+@model GymPic
+
+<form action="/gympic/process" method="post" class="gap-2 fs-4">
+    <div class="form-group mx-2 mt-2 mb-2">
+        <label for="ImageLink">Image Link</label>
+        <input asp-for="ImageLink" class="form-control">
+        <span asp-validation-for="ImageLink" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="hidden" asp-for="GymId" class="form-control">
+    </div>
+    <div class="form-group mx-2 mt-2 mb-2">
+        <input type="submit" class="btn btn-info fs-5" value="Add Image">
+    </div>
+</form>
