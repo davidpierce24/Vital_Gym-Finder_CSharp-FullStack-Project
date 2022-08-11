@@ -3,13 +3,13 @@
 }
 
 <div class="container-main">
-    <h1 class="text-center mt-2">Find The Right Gym For You</h1>
+    <h1 class="text-center mt-3">Find The Right Gym For You</h1>
 
     <div class="row mb-2">
         @foreach (Gym g in ViewBag.Gyms)
         {
             <a href="/gym/display/@g.GymId" id="none" class="col-3 d-flex align-items-stretch flex-wrap">
-                <div class="card" id="home-card">
+                <div class="card my-2" id="home-card">
                     @* idk why but first() show last image and last() shows first image *@
                     <img src="@g.GymPics.First().ImageLink" alt="#" class="card-img-top w-100 h-50">
                     <div class="card-body row homec">
