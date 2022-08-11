@@ -19,9 +19,14 @@
     }
 </table>
 
-<button type="button" class="btn btn-info btn-sm fs-5" data-bs-toggle="modal" data-bs-target="#GymModal">
-    <i class="bi bi-plus"></i>Add a New Gym
-</button>
+<div class="d-flex justify-content-between"> 
+    <button type="button" class="btn btn-info btn-sm fs-5" data-bs-toggle="modal" data-bs-target="#GymModal">
+        <i class="bi bi-plus"></i>Add a New Gym
+    </button>
+    <a href="/logout/owner" class="btn btn-primary btn-sm fs-5">
+        Logout
+    </a>
+</div>
 <div class="modal fade" id="GymModal" tabindex="-1" aria-labelledby="GymModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-black">
@@ -29,3 +34,4 @@
         </div>
     </div>
 </div>
+

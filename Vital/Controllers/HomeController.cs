@@ -167,6 +167,14 @@ public IActionResult Home()
         }
     }
 
+// route to process owner logout ------------------------------------
+    [HttpGet("logout/owner")]
+    public IActionResult LogoutOwner()
+    {
+        HttpContext.Session.Remove("owner");
+        return RedirectToAction("Home");
+    }
+
 
 // Route to display owner dashboard -----------------------------------------
     [HttpGet("owner/dashboard")]
