@@ -26,8 +26,9 @@ public class HomeController : Controller
         if(HttpContext.Session.GetInt32("owner") != null){
             return RedirectToAction("OwnerDashboard");
         }
-        return View();
+        return RedirectToAction("Home");
     }
+
 
 // Route to display the page for an owner to login or register------------
     [HttpGet("owner/loginreg")]
