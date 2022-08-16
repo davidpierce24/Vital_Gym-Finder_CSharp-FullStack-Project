@@ -33,8 +33,8 @@ D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\obj\Release\net6.0\refint\Vita
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\obj\Release\net6.0\Vital.pdb
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\obj\Release\net6.0\Vital.genruntimeconfig.cache
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\obj\Release\net6.0\ref\Vital.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\web.config
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\appsettings.Development.json
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\appsettings.json
-D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\Vital.runtimeconfig.json
-D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\web.config
 D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\Vital.deps.json
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\bin\Release\net6.0\publish\Vital.runtimeconfig.json
