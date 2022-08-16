@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Vital
 build_property.RootNamespace = Vital
-build_property.ProjectDir = D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\
+build_property.ProjectDir = d:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital
+build_property.MSBuildProjectDirectory = d:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/DisplayGym.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/DisplayGym.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEaXNwbGF5R3ltLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Gym.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Gym.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHeW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Home.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Index.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/OwnerDashboard.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/OwnerDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPd25lckRhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/OwnerLoginReg.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/OwnerLoginReg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPd25lckxvZ2luUmVnLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Privacy.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/UserDashboard.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/UserLoginReg.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/UserLoginReg.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyTG9naW5SZWcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddEquipmentForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddEquipmentForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkRXF1aXBtZW50Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddGymForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddGymForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkR3ltRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddGymPicsForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddGymPicsForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkR3ltUGljc0Zvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddHoursForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_AddHoursForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWRkSG91cnNGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_EditEquipmentForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_EditEquipmentForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfRWRpdEVxdWlwbWVudEZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_EditHoursForm.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_EditHoursForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfRWRpdEhvdXJzRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_LoginOwner.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_LoginOwner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTG9naW5Pd25lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_LoginUser.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_LoginUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfTG9naW5Vc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_RegisterOwner.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_RegisterOwner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUmVnaXN0ZXJPd25lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_RegisterUser.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Home/_RegisterUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUmVnaXN0ZXJVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/Error.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/_ViewImports.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/_ViewStart.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/_Layout.cshtml]
+[d:/Code/Practice_For_Fun/c\#/Vital-GymFinder/Vital/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z9kibfrt8n
