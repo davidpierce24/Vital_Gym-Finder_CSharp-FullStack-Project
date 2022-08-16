@@ -1,0 +1,13 @@
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Vital.exe
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\appsettings.Development.json
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\appsettings.json
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Vital.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Vital.runtimeconfig.json
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Vital.pdb
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Microsoft.EntityFrameworkCore.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Microsoft.Extensions.Caching.Memory.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\MySqlConnector.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Code\Practice_For_Fun\c#\Vital-GymFinder\Vital\publish\Vital.deps.json

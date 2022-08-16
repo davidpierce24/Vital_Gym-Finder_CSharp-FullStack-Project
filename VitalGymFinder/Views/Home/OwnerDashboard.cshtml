@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Owner Dashboard";
+}
+
+<h1>Welcome to your Owner Dashboard!</h1>
+<table class="table table-dark fs-4">
+    <thead>
+        <tr>
+            <th>Gym Name</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    @foreach (Gym g in ViewBag.Owner.GymsOwned)
+    {
+        <tr>
+            <td><a href="/gym/@g.GymId">@g.GymName</a></td>
+            <td>@g.Address1, @g.City, @g.State @g.Zip</td>
+        </tr>
+    }
+</table>
+
+<div class="d-flex justify-content-between"> 
+    <button type="button" class="btn btn-info btn-sm fs-5" data-bs-toggle="modal" data-bs-target="#GymModal">
+        <i class="bi bi-plus"></i>Add a New Gym
+    </button>
+    <a href="/logout/owner" class="btn btn-primary btn-sm fs-5">
+        Logout
+    </a>
+</div>
+<div class="modal fade" id="GymModal" tabindex="-1" aria-labelledby="GymModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-black">
+            <partial name="_AddGymForm" />
+        </div>
+    </div>
+</div>
+
